@@ -179,3 +179,7 @@ def whirlpool(data: bytes) -> str:
         Exactly 128 lowercase hexadecimal characters.
     """
     return whirlpool_bytes(data).hex()
+
+
+# Alias for explicit typing/naming clarity
+whirlpool_hex = whirlpool

@@ -58,6 +58,10 @@ def generate_keypair(p: int, g: int) -> Tuple[int, int]:
     raise RuntimeError("Failed to generate a valid keypair within retry threshold")
 
 
+# Alias for explicit namespace naming
+elgamal_generate_keypair = generate_keypair
+
+
 def elgamal_encrypt_key(
     key_32bit: int, p: int, g: int, public_y: int
 ) -> Tuple[int, int]:
