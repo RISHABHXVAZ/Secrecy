@@ -1,0 +1,11 @@
+# Secrecy — Secure Client-Server Message Exchange
+# Author: Rishabh Srivastava (Roll No.: 44285)
+#
+# Core Cryptographic & Networking Requirements:
+# The entire Secrecy cryptosystem (Simplified IDEA, ElGamal Key Exchange,
+# ElGamal Digital Signatures, Whirlpool Hashing, and TCP Protocol) is implemented
+# 100% from scratch using ONLY Python's standard library (Python >= 3.10).
+# No third-party cryptography libraries are used or permitted.
+
+# Optional Developer Dependency (for re-generating documentation screenshots):
+pillow>=10.0.0
