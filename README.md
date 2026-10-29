@@ -151,23 +151,20 @@ Secrecy/
 │   ├── test_simplified_idea.py     # Hoffman KAT, 196,608-block exhaustive roundtrips
 │   └── test_whirlpool.py           # ISO/IEC official test vectors and boundary cases
 │
-├── docs/                           # Documentation logs and generated assets
-│   ├── demo_client_output.txt      # Full captured console output from client
-│   ├── demo_server_output.txt      # Full captured console output from server
-│   └── screenshots/                # High-resolution genuine terminal captures
-│       ├── client_execution.png    # Authentic client execution screenshot
-│       ├── server_execution.png    # Authentic server execution screenshot
-│       └── attack_rejection.png    # Attack simulation & rejection screenshot
-│
-└── scripts/                        # Utility scripts
-    └── generate_screenshots.py     # Subprocess runner & terminal image renderer
+└── docs/                           # Documentation logs and execution captures
+    ├── demo_client_output.txt      # Full captured console output from client
+    ├── demo_server_output.txt      # Full captured console output from server
+    └── screenshots/                # Terminal execution captures
+        ├── client_execution.png    # Client execution screenshot
+        ├── server_execution.png    # Server execution screenshot
+        └── attack_rejection.png    # Attack simulation & rejection screenshot
 ```
 
 ---
 
 ## 5. Execution Screenshots
 
-The following high-resolution screenshots demonstrate genuine executions of the Secrecy client and server applications:
+The following screenshots capture the execution of the Secrecy client and server applications:
 
 ### 5.1 Client Side Execution (Secure Message Sender)
 Shows message input, 32-bit session key, ElGamal parameters, encrypted secret key, block-by-block and round-by-round Simplified IDEA encryption trace, ciphertext hex, 512-bit Whirlpool digest, digital signature components $(r, s)$, and server verification confirmation:
@@ -190,8 +187,7 @@ Demonstrates the server detecting and rejecting a ciphertext tampering attack in
 
 ### Prerequisites
 * Python 3.10 or higher (tested with Python 3.14).
-* Standard library only (no external packages needed to run client, server, or tests).
-* Optional: `pip install pillow` only if you wish to re-generate PNG screenshots.
+* Standard library only (no external packages needed to run client, server, demo, or tests).
 
 ### 6.1 Run the Full Test Suite
 Execute the entire test suite (55 automated tests covering unit tests, reference KATs, exhaustive block tests, protocol edge cases, and end-to-end integration):
