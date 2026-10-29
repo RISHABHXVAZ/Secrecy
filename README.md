@@ -2,7 +2,7 @@
 
 **Author:** Rishabh Srivastava
 **Roll Number:** 44285
-**Institution:** Indian Institute of Information Technology (IIIT)
+**Institution:** Motilal Nehru National Institute of Technology (MNNIT) Allahabad
 **GitHub Repository:** [https://github.com/RISHABHXVAZ/Secrecy.git](https://github.com/RISHABHXVAZ/Secrecy.git)
 **Default Branch:** `main`
 
